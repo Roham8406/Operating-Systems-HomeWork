@@ -9,7 +9,7 @@ if [ -z "$1" ] || [ -z "$2" ]; then
 fi
 
 # Write the Persian title into a LaTeX macro file
-echo "\newcommand{\HWTitle}{$2}" > current_title.tex
+echo "$2" > current_title.tex
 
 # Compile dynamically
 latexmk -pvc -xelatex -shell-escape -jobname="$1" main.tex

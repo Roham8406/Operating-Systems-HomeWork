@@ -15,7 +15,11 @@
 \pagenumbering{arabic}
 
 % -------------------- Homework Content -------------------
-% This dynamically loads HWs/HW1.tex, HWs/HW2.tex, etc.
+\tableofcontents
+\renewcommand{\thesection}{\arabic{section}}
+\newpage
+\listoffigures
+\newpage
 \include{HWs/\jobname}
 
 \end{document}
