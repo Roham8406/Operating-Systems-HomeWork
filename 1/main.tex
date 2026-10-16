@@ -1,31 +1,45 @@
-\input{../template/packages}
-\usepackage{../template/template}
 
-\date{}
+%--------------------------------------------------------------------------
+%
+%  Seminar Template
+%  [Put Your Seminar Title Here]
+%  By: [Put Your Name Here]
+%
+%--------------------------------------------------------------------------
+
+
+
+\documentclass[oneside,a4paper,12pt]{report}
+
+\input{styles/common.tex}
+\input{styles/custom.tex}
 
 \begin{document}
-	\def\ci{\perp\!\!\!\perp}
-    \ingodwetrust
-    \header {دکتر حمید سربازی آزاد} {معماری کامپیوتر} {بهار ۱۴۰۵} {تحلیل نقصان‌های برخورد و طراحی معماری حافظه نهان قربانی}
-    \tableofcontents
-    \pagebreak
-
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue!70!black,
-    citecolor=blue!70!black,
-    urlcolor=blue!70!black
-}
-
-\linespread{1.3}
-
-\vspace{-2em}
-
-\section{چکیده}
-    \input{answers/1}
 
 
-\section{مدل معماری و پارامترها}
-    \input{answers/1}
+% -------------------- Front Pages --------------------
+
+\include{front/info}
+\pagestyle{empty}
+
+\include{front/template/title}
+%\input{front/template/besmellah.tex}‌  % بسم‌الله
+
+
+\pagestyle{plain}
+\pagenumbering{arabic}
+%\pagenumbering{tartibi}
+
+% -------------------- Chapters -------------------
+\include{chapters/context}
+% -------------------- Bibliography & Dictionary --------------------
+
+%\include{front/dictionary}
+
+% -------------------- Appendices --------------------
+
+
+
+% -------------------- The End! --------------------
 
 \end{document}

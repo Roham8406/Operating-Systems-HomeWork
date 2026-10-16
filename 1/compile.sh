@@ -1,2 +1,2 @@
-mkdir build
-latexmk -pvc -xelatex -shell-escape -outdir=build main.tex
+# mkdir build
+latexmk -pvc -xelatex -shell-escape main.tex
