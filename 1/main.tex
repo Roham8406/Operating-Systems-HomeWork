@@ -1,14 +1,3 @@
-
-%--------------------------------------------------------------------------
-%
-%  Seminar Template
-%  [Put Your Seminar Title Here]
-%  By: [Put Your Name Here]
-%
-%--------------------------------------------------------------------------
-
-
-
 \documentclass[oneside,a4paper,12pt]{report}
 
 \input{styles/common.tex}
@@ -16,30 +5,17 @@
 
 \begin{document}
 
-
 % -------------------- Front Pages --------------------
-
 \include{front/info}
 \pagestyle{empty}
 
 \include{front/template/title}
-%\input{front/template/besmellah.tex}‌  % بسم‌الله
-
 
 \pagestyle{plain}
 \pagenumbering{arabic}
-%\pagenumbering{tartibi}
 
-% -------------------- Chapters -------------------
-\include{chapters/context}
-% -------------------- Bibliography & Dictionary --------------------
-
-%\include{front/dictionary}
-
-% -------------------- Appendices --------------------
-
-
-
-% -------------------- The End! --------------------
+% -------------------- Homework Content -------------------
+% This dynamically loads HWs/HW1.tex, HWs/HW2.tex, etc.
+\include{HWs/\jobname}
 
 \end{document}
