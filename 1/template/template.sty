@@ -1,0 +1,59 @@
+\newcommand{\ingodwetrust} {
+    \begin{center}
+        {\fontsize{28}{32}\selectfont
+    	% بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+		بسمه تعالی
+		}
+        \vspace{0.3cm}
+    \end{center}
+}
+
+\newcommand{\header}[4]{
+	\parindent=0em
+	\includegraphics[width=2cm, height=2cm]{/home/roham/Latex/HW/template/sharif_logo.png} \hfill {\bf #3}\\
+	
+	\vspace{0em}
+	{\bf دانشگاه صنعتی شریف} \hfill {\bf #1}\\
+	\\
+	{\bf دانشکده مهندسی کامپیوتر} \hfill {\bf #2}\\
+	% \leftline{\hfill\small
+	{\bf پارسا صادقی} \hfill {\bf 403110552}\\
+	{\bf رهام قاسمی قمی} \hfill {\bf ۴۰۳۱۰۶۴۵۴}\\
+	{\bf شایان سبزی شهربابکی} \hfill {\bf 403170999}\\
+	\vspace{1mm}
+	\hrule height .12em
+	\normalsize
+	\vspace{1mm}
+	\begin{center}
+		{\large #4}
+	\end{center}
+	\hfill
+	\hrule height .05em
+}
+
+\newcommand{\partheader}[2]{
+	\vspace{0.5em}
+	\hrule height .12em
+    \ifcase#2
+        \section{#1}
+    \or
+        \subsection{#1}
+    \or
+        \subsubsection{#1}
+    \else
+        \paragraph{#1}
+    \fi
+	% \\[-0.6em]
+	\hrule height .05em
+
+    % \hrule height .12em
+    % \vspace{0.05em}
+}
+% \newcommand{\partheader}[2]{
+
+
+	% {\large
+	% 	#1
+	% }\\[-0.6em]
+% 	\hrule height .05em
+% }

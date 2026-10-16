@@ -1,0 +1,109 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{upgreek}
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage{listings}
+\usepackage[colorlinks = true,
+linkcolor = blue,
+urlcolor  = blue,
+citecolor = blue,
+anchorcolor = blue]{hyperref}
+\usepackage{fullpage,hyperref,color,clrscode,amsfonts,graphicx,textcomp}
+\usepackage{tabularx}
+\usepackage{adjustbox}
+\usepackage{setspace}
+\usepackage{wrapfig}
+
+\usepackage{amssymb}
+\usepackage{siunitx} 
+\usepackage[inline]{enumitem}
+\usepackage{pgfplots}
+\usepackage{minted}
+
+\newcommand{\drawaline}[4]{
+	\draw [extended line=1cm,stealth-stealth] (#1,#2)--(#3,#4);
+}
+\usepackage{float}
+\usetikzlibrary {positioning}
+\definecolor {processblue}{cmyk}{1,1,1,0}
+\definecolor{headerblue}{RGB}{41, 70, 115}
+\definecolor{lightgrey}{RGB}{245, 247, 250}
+\definecolor{mainblue}{RGB}{43, 92, 143}
+\definecolor{accentorange}{RGB}{217, 95, 2}
+\definecolor{purple1}{RGB}{117, 112, 179}
+\definecolor{pink1}{RGB}{231, 41, 138}
+\definecolor{teal1}{RGB}{27, 158, 119}
+\usetikzlibrary{automata,arrows.meta}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{neuralnetwork}
+\usepackage{tkz-graph}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=violet,
+	filecolor=blue,      
+	urlcolor=magenta,
+}
+
+
+\usetikzlibrary{arrows, positioning}
+
+
+\usepackage[bottom]{footmisc}
+\usepackage{subcaption}
+\usepackage{xepersian}
+
+\usepackage{tikz}
+
+\usetikzlibrary{matrix, calc}
+
+\settextfont{XB Zar}
+\setlatintextfont{Times New Roman}
+
+\pgfplotsset{compat=1.18}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.95}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\addtolength{\textwidth}{0.2in}
+\addtolength{\oddsidemargin}{-0.1in}
+\addtolength{\evensidemargin}{-0.1in}
+
+\addtolength{\textheight}{0.5in}
+\addtolength{\topmargin}{-0.25in}
+\newcommand{\IP}{\mathbb{P}}
+
+\makeatletter
+\def\LTRfootnote{\@ifnextchar[\@xLTRfootnote{\stepcounter\@mpfn
+		\protected@xdef\@thefnmark{\persianfont\thempfn}%
+		\@footnotemark\@LTRfootnotetext}]}
+\makeatother	
+
+
