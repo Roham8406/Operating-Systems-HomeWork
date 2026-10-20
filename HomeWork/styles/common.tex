@@ -17,6 +17,10 @@
 \usepackage[figureposition=bottom,tableposition=top,font={small,bf},labelfont=bf]{caption}
 
 \usepackage{algorithmicx,algorithm}
+
+\usepackage{minted}
+\usepackage{pgfplots}
+
 \usepackage{xstring}
 \usepackage[localise=on,extrafootnotefeatures]{xepersian}
 
@@ -200,4 +204,16 @@ Path=styles/fonts/
 	{\begin{wrapfigure}{l}{\IfValueTF{#3}{#3}{#2}}
 	\centering\includegraphics[width=#2]{figs/#1}\end{wrapfigure}}
 
+
+
+\definecolor{perldocbg}{RGB}{248,248,248}
+
+\usemintedstyle{perldoc}
+\setminted{
+    bgcolor=perldocbg,
+    fontsize=\small,
+    breaklines,
+    linenos
+}
+\pgfplotsset{compat=1.18}
 
